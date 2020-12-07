@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace命名空间 -->
+<mapper namespace="com.edu.tjdz.geng.dao.StudentDao">
+
+
+	<select id="selectAllStus" resultType="com.edu.tjdz.geng.model.Student">
+		select id, department, class className, name,tempreture1, tempreture2,tempreture3
+		from tbl_student
+  </select>
+
+	<insert id="insertStudent" parameterType="com.edu.tjdz.geng.model.Student" keyProperty="id" useGeneratedKeys="true">
+		insert into tbl_student(id, department, class, name, tempreture1, tempreture2,tempreture3) values(#{id},#{department},#{className}, #{name}, #{tempreture1}, #{tempreture2}, #{tempreture3})
+ </insert>
+
+</mapper>
