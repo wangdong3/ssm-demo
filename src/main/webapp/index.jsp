@@ -13,6 +13,7 @@
 <div class="page-header">
     <div class="page-header">
         <h1>欢迎使用学生信息系统           <small>测试版</small></h1>
+        <a href="login">请登录</a>
     </div>
     <div class="list-group">
         <!--请求名称已变，仅仅用来展现StudentsList页面-->
